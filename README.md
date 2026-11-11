@@ -11,6 +11,8 @@ sofia-bat-mitzvah/
 ├── index.html          ← Página principal
 ├── css/style.css       ← Estilos
 ├── js/main.js          ← Interacciones
+├── audio/
+│   └── hatikvah.mp3    ← Música de fondo
 ├── images/
 │   ├── mockup.jpg      ← Foto de la maqueta (WhatsApp Image)
 │   ├── hoja_01.jpg     ← Primera hoja de fotos familiares
@@ -33,4 +35,4 @@ sofia-bat-mitzvah/
 
 ## 🎵 Música
 
-El Hatikva (הַתִּקְוָה) se reproduce automáticamente desde Wikimedia Commons (versión instrumental, libre de derechos).
+El Hatikva (הַתִּקְוָה) se reproduce en loop desde `audio/hatikvah.mp3`. El navegador puede requerir que la persona interactúe con la página antes de permitir la reproducción con sonido.
