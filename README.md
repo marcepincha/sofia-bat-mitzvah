@@ -13,18 +13,21 @@ sofia-bat-mitzvah/
 ├── js/main.js          ← Interacciones
 ├── audio/
 │   └── hatikvah.mp3    ← Música de fondo
+├── data/
+│   └── galeria.csv     ← Descripciones de las fotografías
 ├── images/
 │   ├── mockup.jpg      ← Foto de la maqueta (WhatsApp Image)
-│   ├── hoja_01.jpg     ← Primera hoja de fotos familiares
-│   └── hoja_02.jpg     ← Segunda hoja de fotos familiares
+│   └── galeria/        ← Fotografías familiares de la galería
 └── README.md
 ```
 
 ## 🖼️ Agregar las fotos
 
 1. Guardá la foto de la maqueta como `images/mockup.jpg`
-2. Guardá la hoja de fotos 01 como `images/hoja_01.jpg`
-3. Guardá la hoja de fotos 02 como `images/hoja_02.jpg`
+2. Guardá las fotografías familiares dentro de `images/galeria/` y publicá los cambios en GitHub. El sitio detecta automáticamente los archivos de esa carpeta (JPG, PNG, GIF, WebP y AVIF).
+3. Para agregar descripciones, editá `data/galeria.csv` usando el nombre exacto de la imagen. Podés dejar vacíos los idiomas sin descripción.
+
+La detección automática usa la API pública de GitHub Pages; si abrís el sitio fuera de GitHub Pages, la galería usa como lista alternativa los archivos incluidos en `data/galeria.csv`.
 
 ## 🚀 Publicar en GitHub Pages
 

@@ -74,11 +74,6 @@
       </div>
     </div>
 
-    <!-- Fotos flotantes decorativas -->
-    <div class="floating-photos" aria-hidden="true">
-      <div class="fp fp1"><img src="images/hoja_01.png" alt="" /></div>
-      <div class="fp fp2"><img src="images/hoja_02.jpg" alt="" /></div>
-    </div>
   </section>
 
   <!-- ═══════════════════════════ SECTION: LA INSTALACIÓN ═══════════════════════════ -->
@@ -144,30 +139,22 @@
     <h2 class="section-title light">Las Fotografías Familiares<br/><span class="subtitle-sm">The Family Photographs · תמונות המשפחה</span></h2>
     <p class="section-intro light">Cada imagen es un puente entre generaciones. / Every image is a bridge between generations.</p>
 
-    <!-- Galería tipo "scatter" -->
-    <div class="photo-gallery" id="gallery">
-      <!-- Mockup de la instalación -->
-      <div class="gallery-item large" data-index="0">
-        <div class="photo-frame-gallery">
-          <img src="images/mockup.jpg" alt="La instalación artística — Sofía en su Bat Mitzvah" loading="lazy" />
-          <div class="photo-caption">La instalación · The installation · ההתקנה</div>
+    <!-- Carrusel de fotografías familiares -->
+    <div class="photo-carousel" id="gallery" role="region" aria-label="Fotografías familiares" aria-roledescription="carrusel" tabindex="0">
+      <div class="photo-carousel-viewport">
+        <div class="photo-carousel-track">
+          <div class="gallery-item large" data-index="0">
+            <div class="photo-frame-gallery">
+              <img src="images/mockup.jpg" alt="La instalación artística — Sofía en su Bat Mitzvah" loading="lazy" />
+              <div class="photo-caption">La instalación · The installation · ההתקנה</div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <!-- Hoja de fotos 01 -->
-      <div class="gallery-item" data-index="1">
-        <div class="photo-frame-gallery tilt-left">
-          <img src="images/hoja_01.png" alt="Fotografías familiares históricas — documentos y retratos" loading="lazy" />
-          <div class="photo-caption">Documentos y retratos · Documents &amp; portraits</div>
-        </div>
-      </div>
-
-      <!-- Hoja de fotos 02 -->
-      <div class="gallery-item" data-index="2">
-        <div class="photo-frame-gallery tilt-right">
-          <img src="images/hoja_02.jpg" alt="Fotografías familiares — generaciones" loading="lazy" />
-          <div class="photo-caption">Generaciones · Generations · דורות</div>
-        </div>
+      <div class="photo-carousel-controls">
+        <button class="carousel-button" id="gallery-prev" type="button" aria-label="Fotografía anterior">‹</button>
+        <span id="gallery-position" aria-live="polite" aria-atomic="true"></span>
+        <button class="carousel-button" id="gallery-next" type="button" aria-label="Fotografía siguiente">›</button>
       </div>
     </div>
 
