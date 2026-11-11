@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Caja de los Recuerdos — Sofía's Bat Mitzvah</title>
+  <meta name="description" content="Una instalación artística que conecta la historia familiar judía con la identidad de Sofía a través de su Bat Mitzvah. An artistic installation connecting Jewish family history with Sofía's identity." />
+  <meta property="og:title" content="La Caja de los Recuerdos — Sofía" />
+  <meta property="og:description" content="Historia, memoria e identidad. History, memory and identity. היסטוריה, זיכרון וזהות." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&family=Frank+Ruhl+Libre:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════ PRELOADER ═══════════════════════════ -->
+  <div id="preloader">
+    <div class="star-of-david">
+      <div class="star-triangle up"></div>
+      <div class="star-triangle down"></div>
+    </div>
+    <p class="preloader-text">קופסת הזיכרונות</p>
+  </div>
+
+  <!-- ═══════════════════════════ AUDIO PLAYER ═══════════════════════════ -->
+  <audio id="hatikvah-audio" loop>
+    <source src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Hatikvah_instrumental.ogg" type="audio/ogg" />
+  </audio>
+  <div id="audio-controls" title="Hatikva — הַתִּקְוָה">
+    <button id="audio-btn" aria-label="Play/Pause Hatikva">
+      <span id="audio-icon">♪</span>
+      <span id="audio-label">הַתִּקְוָה</span>
+    </button>
+  </div>
+
+  <!-- ═══════════════════════════ NAV ═══════════════════════════ -->
+  <nav id="main-nav">
+    <div class="nav-inner">
+      <span class="nav-logo">✡</span>
+      <ul>
+        <li><a href="#instalacion">La Instalación</a></li>
+        <li><a href="#fotos">Las Fotos</a></li>
+        <li><a href="#statement">El Legado</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-star">✡</div>
+      <p class="hero-subtitle-top">Proyecto Artístico de / Art Project by</p>
+      <h1 class="hero-title">
+        <span class="title-line-1">La Caja de los Recuerdos</span>
+        <span class="title-line-2">The Memory Box</span>
+        <span class="title-line-3 hebrew">קופסת הזיכרונות</span>
+      </h1>
+      <p class="hero-name">Sofía</p>
+      <p class="hero-tagline">Historia · Identidad · Bat Mitzvah</p>
+      <a href="#instalacion" class="hero-cta">Explorar ↓</a>
+    </div>
+
+    <!-- Foto de la maqueta flotante -->
+    <div class="hero-mockup">
+      <div class="photo-frame tilt-right">
+        <img src="images/mockup.jpg" alt="Maqueta de la instalación artística — Bat Mitzvah de Sofía" />
+        <div class="photo-label">La instalación / The installation</div>
+      </div>
+    </div>
+
+    <!-- Fotos flotantes decorativas -->
+    <div class="floating-photos" aria-hidden="true">
+      <div class="fp fp1"><img src="images/hoja_01.png" alt="" /></div>
+      <div class="fp fp2"><img src="images/hoja_02.jpg" alt="" /></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ SECTION: LA INSTALACIÓN ═══════════════════════════ -->
+  <section id="instalacion" class="content-section">
+    <div class="section-ornament">— ✡ —</div>
+    <h2 class="section-title">La Instalación Artística<br/><span class="subtitle-sm">The Artistic Installation</span></h2>
+
+    <!-- Tabs de idioma -->
+    <div class="lang-tabs" role="tablist">
+      <button class="lang-tab active" data-lang="es" role="tab" aria-selected="true" id="tab-es">🇦🇷 Español</button>
+      <button class="lang-tab" data-lang="en" role="tab" aria-selected="false" id="tab-en">🇬🇧 English</button>
+      <button class="lang-tab" data-lang="he" role="tab" aria-selected="false" id="tab-he">🇮🇱 עברית</button>
+    </div>
+
+    <div class="lang-content">
+      <!-- ESPAÑOL -->
+      <div class="lang-panel active" id="panel-es" role="tabpanel" aria-labelledby="tab-es">
+        <div class="text-block">
+          <h3>Sobre la Obra</h3>
+          <p>Esta instalación artística es un viaje a través del tiempo y la memoria. Una caja de cartón —como las que guardan lo más preciado de cada familia— se convierte en el escenario donde el pasado y el presente se encuentran cara a cara.</p>
+          <p>Las paredes interiores de la caja están tapizadas de fotografías históricas: rostros que cruzaron el océano desde Europa del Este, documentos en ruso y hebreo, billetes de una Rusia que ya no existe, pasaportes de otra época. Son las huellas visibles de una familia judía que sobrevivió el siglo XX con su identidad intacta.</p>
+          <p>En el centro de la caja, Sofía hace su Bat Mitzvah. Envuelta en un tallit, con el Torá frente a ella y la bandera de Israel a su lado, Sofía no es solo ella misma: <em>es todas sus abuelas</em>. Es el último eslabón de una cadena de generaciones que eligieron preservar su fe y su cultura.</p>
+          <blockquote>
+            "Cuando abro esa caja, no veo fotos viejas. Veo las personas que me hicieron ser quien soy."
+            <footer>— Sofía</footer>
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- ENGLISH -->
+      <div class="lang-panel" id="panel-en" role="tabpanel" aria-labelledby="tab-en">
+        <div class="text-block">
+          <h3>About the Work</h3>
+          <p>This artistic installation is a journey through time and memory. A cardboard box — like the ones that hold each family's most precious belongings — becomes the stage where the past and present meet face to face.</p>
+          <p>The inner walls of the box are covered with historical photographs: faces that crossed the ocean from Eastern Europe, documents in Russian and Hebrew, banknotes from a Russia that no longer exists, passports from another era. These are the visible traces of a Jewish family that survived the twentieth century with its identity intact.</p>
+          <p>At the center of the box, Sofía performs her Bat Mitzvah. Wrapped in a tallit, with the Torah before her and the Israeli flag at her side, Sofía is not only herself: <em>she is all her grandmothers</em>. She is the last link in a chain of generations that chose to preserve their faith and culture.</p>
+          <blockquote>
+            "When I open that box, I don't see old photographs. I see the people who made me who I am."
+            <footer>— Sofía</footer>
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- HEBREW -->
+      <div class="lang-panel hebrew-panel" id="panel-he" role="tabpanel" aria-labelledby="tab-he">
+        <div class="text-block" dir="rtl" lang="he">
+          <h3>על היצירה</h3>
+          <p>התקנת אמנות זו היא מסע בזמן ובזיכרון. קופסת קרטון — כמו אלה ששומרות על היקר ביותר של כל משפחה — הופכת לבמה שבה העבר וההווה נפגשים פנים אל פנים.</p>
+          <p>קירותיה הפנימיים של הקופסה מכוסים בתמונות היסטוריות: פנים שחצו את האוקיינוס ממזרח אירופה, מסמכים ברוסית ובעברית, שטרות כסף מרוסיה שאינה עוד, דרכונים מתקופה אחרת. אלה הם עקבותיה הגלויים של משפחה יהודית ששרדה את המאה העשרים עם זהותה שלמה.</p>
+          <p>במרכז הקופסה, סופיה חוגגת את בת מצווה שלה. עטופה בטלית, עם ספר התורה לפניה ודגל ישראל לצדה, סופיה אינה רק עצמה: <em>היא כל סבותיה</em>. היא הקישור האחרון בשרשרת של דורות שבחרו לשמר את אמונתם ותרבותם.</p>
+          <blockquote>
+            "כשאני פותחת את הקופסה הזו, אני לא רואה תמונות ישנות. אני רואה את האנשים שעשו אותי למי שאני."
+            <footer>— סופיה</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ SECTION: FOTOS ═══════════════════════════ -->
+  <section id="fotos" class="content-section dark-section">
+    <div class="section-ornament light">— ✡ —</div>
+    <h2 class="section-title light">Las Fotografías Familiares<br/><span class="subtitle-sm">The Family Photographs · תמונות המשפחה</span></h2>
+    <p class="section-intro light">Cada imagen es un puente entre generaciones. / Every image is a bridge between generations.</p>
+
+    <!-- Galería tipo "scatter" -->
+    <div class="photo-gallery" id="gallery">
+      <!-- Mockup de la instalación -->
+      <div class="gallery-item large" data-index="0">
+        <div class="photo-frame-gallery">
+          <img src="images/mockup.jpg" alt="La instalación artística — Sofía en su Bat Mitzvah" loading="lazy" />
+          <div class="photo-caption">La instalación · The installation · ההתקנה</div>
+        </div>
+      </div>
+
+      <!-- Hoja de fotos 01 -->
+      <div class="gallery-item" data-index="1">
+        <div class="photo-frame-gallery tilt-left">
+          <img src="images/hoja_01.png" alt="Fotografías familiares históricas — documentos y retratos" loading="lazy" />
+          <div class="photo-caption">Documentos y retratos · Documents &amp; portraits</div>
+        </div>
+      </div>
+
+      <!-- Hoja de fotos 02 -->
+      <div class="gallery-item" data-index="2">
+        <div class="photo-frame-gallery tilt-right">
+          <img src="images/hoja_02.jpg" alt="Fotografías familiares — generaciones" loading="lazy" />
+          <div class="photo-caption">Generaciones · Generations · דורות</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" aria-modal="true" role="dialog" aria-label="Foto ampliada">
+      <button id="lightbox-close" aria-label="Cerrar">✕</button>
+      <img id="lightbox-img" src="" alt="" />
+      <p id="lightbox-caption"></p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ SECTION: EL LEGADO ═══════════════════════════ -->
+  <section id="statement" class="content-section">
+    <div class="section-ornament">— ✡ —</div>
+    <h2 class="section-title">El Legado<br/><span class="subtitle-sm">The Legacy · המורשת</span></h2>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-icon">🌍</div>
+        <div class="timeline-content">
+          <h4>El Origen / The Origin / המקור</h4>
+          <p>Una familia judía en Europa del Este. Generaciones de fe, cultura y tradición preservadas a través de siglos de adversidad.</p>
+          <p class="timeline-he hebrew" dir="rtl" lang="he">משפחה יהודית במזרח אירופה. דורות של אמונה, תרבות ומסורת שנשמרו לאורך מאות שנים של קושי.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-icon">🚢</div>
+        <div class="timeline-content">
+          <h4>El Viaje / The Journey / המסע</h4>
+          <p>El cruce del océano. Nuevas tierras, nuevos idiomas, pero la misma alma judía intacta. Los documentos, los pasaportes, las fotografías fueron el equipaje del alma.</p>
+          <p class="timeline-he hebrew" dir="rtl" lang="he">חציית האוקיינוס. אדמות חדשות, שפות חדשות, אך אותה הנשמה היהודית שלמה. המסמכים, הדרכונים, התמונות היו מטען הנשמה.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-icon">🕯️</div>
+        <div class="timeline-content">
+          <h4>La Continuidad / Continuity / המשכיות</h4>
+          <p>La cadena no se rompió. Hoy, Sofía celebra su Bat Mitzvah — el momento en que una nueva generación dice: "Yo soy parte de esta historia. Yo la continúo."</p>
+          <p class="timeline-he hebrew" dir="rtl" lang="he">השרשרת לא נשברה. היום, סופיה חוגגת את בת מצווה שלה — הרגע שבו דור חדש אומר: "אני חלק מהסיפור הזה. אני ממשיכה אותו."</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-icon">✡</div>
+        <div class="timeline-content">
+          <h4>Sofía / סופיה</h4>
+          <p>Hoy, Sofía abre la caja de los recuerdos. No para cerrarla. Para que lo que hay adentro también sea suyo.</p>
+          <p class="timeline-he hebrew" dir="rtl" lang="he">היום, סופיה פותחת את קופסת הזיכרונות. לא כדי לסגור אותה. כדי שמה שבתוכה יהיה גם שלה.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Poema/cierre -->
+    <div class="closing-poem reveal">
+      <div class="poem-star">✡</div>
+      <p class="poem-line es">"De todas las fotos que guarda la caja,<br/>la más importante<br/>aún está por tomarse."</p>
+      <p class="poem-line en">"Of all the photographs the box holds,<br/>the most important one<br/>is yet to be taken."</p>
+      <p class="poem-line he hebrew" dir="rtl" lang="he">«מכל התמונות ששומרת הקופסה,<br/>החשובה ביותר<br/>טרם צולמה.»</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer id="contact">
+    <div class="footer-star hebrew">✡</div>
+    <p class="footer-name">Sofía</p>
+    <p class="footer-subtitle">Bat Mitzvah · 2026</p>
+    <p class="footer-quote hebrew" dir="rtl" lang="he">עַם יִשְׂרָאֵל חַי</p>
+    <p class="footer-quote-trans">El pueblo de Israel vive · The people of Israel live</p>
+    <p class="footer-credit">Instalación artística / Artistic installation · <span class="hebrew">קופסת הזיכרונות</span></p>
+    <p class="footer-music">♪ <em>Hatikvah</em> (הַתִּקְוָה) — Himno nacional de Israel / Israeli National Anthem</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
