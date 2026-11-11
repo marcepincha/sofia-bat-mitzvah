@@ -39,3 +39,4 @@ La detección automática usa la API pública de GitHub Pages; si abrís el siti
 ## 🎵 Música
 
 El Hatikva (הַתִּקְוָה) se reproduce en loop desde `audio/hatikvah.mp3`. El navegador puede requerir que la persona interactúe con la página antes de permitir la reproducción con sonido.
+
